@@ -37,4 +37,5 @@ As principais vantagens da normalização de dados são: redução da redundânc
 Já como desvantagens, temos uma maior complexidade do modelo de dados, bem como maior tempo para desenvovolver e maior número de tabelas.
 
 
-Fonte: [Blog do Zouza](https://medium.com/blog-do-zouza/modelagem-relacional-uma-visão-geral-44cd8807fc87), [eHow](https://www.ehow.com.br/interferencia-retroativa-proativa-fatos_61464/) e [Acervo Lima](https://acervolima.com/o-que-e-normalizacao-de-dados/).
+## Fonte
+[Blog do Zouza](https://medium.com/blog-do-zouza/modelagem-relacional-uma-visão-geral-44cd8807fc87), [eHow](https://www.ehow.com.br/interferencia-retroativa-proativa-fatos_61464/) e [Acervo Lima](https://acervolima.com/o-que-e-normalizacao-de-dados/).
