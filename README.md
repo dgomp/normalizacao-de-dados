@@ -25,11 +25,9 @@ Estabelece que cada coluna de uma tabela deve ter valores atômicos, ou seja, n�
     | `1` | `SILVA, Jose`  | `08/15/1985` | `85912345698` |
     | `2` | `LOPES, Maria` | `01/03/1972` | `85913311254` |
 
-    > [!NOTE]
     > *A mesma pessoa aparece duas vezes, pois possui dois telefones.*
 
-  Para resolver esse problema, teremos que dividir a tabela em **duas**.
-
+    Para resolver esse problema, teremos que dividir a tabela em **duas**.
 
     1. Somente ID, Nome e Data de Nascimento:
 
@@ -38,7 +36,6 @@ Estabelece que cada coluna de uma tabela deve ter valores atômicos, ou seja, n�
         | `1` | `SILVA, Jose`  | `08/15/1985` |
         | `2` | `LOPES, Maria` | `01/03/1972` |
 
-        > [!NOTE]
         > *Tabela sem a coluna de telefone.*
 
     2. ID e Telefone:
@@ -49,10 +46,9 @@ Estabelece que cada coluna de uma tabela deve ter valores atômicos, ou seja, n�
         | `1` | `85912345698`|
         | `2` | `85913311254`|
 
-        > [!NOTE]
         > *Tabela somente com ID e telefone.*
 
-    Agora, não teremos informações repetidas na tabela.
+Agora, não teremos informações repetidas na tabela.
 
 
 ### Segunda Forma Normal (2FN)
@@ -67,11 +63,9 @@ Estabelece que cada coluna de uma tabela deve depender da chave primária da tab
     |    `2`   | `04/31/2023` |   `2`  |    `2`   |   `54`   |    `10`    |    `22`    | `95.30` |
     |    `3`   | `07/01/2023` |   `2`  |    `3`   |   `54`   |    `10`    |    `33`    | `84.70` |
 
-    > [!NOTE]
     > *Aparece código do livro, código do autor e código da editora.*
 
   Para resolver esse problema, teremos que dividir a tabela em **duas**.
-
 
     1. Somente IDVenda, DtVenda, CodCli, CodLivro, Quantidade e VlrUnd:
 
@@ -81,7 +75,6 @@ Estabelece que cada coluna de uma tabela deve depender da chave primária da tab
         |    `2`   | `04/31/2023` |   `2`  |    `2`   |    `22`    | `95.30` |
         |    `3`   | `07/01/2023` |   `2`  |    `3`   |    `33`    | `84.70` |
 
-        > [!NOTE]
         > *Primeira tabela sem as colunas CodAutor e CodEditora.*
 
     2. CodLivro, CodAutor e CodEditora:
@@ -92,10 +85,9 @@ Estabelece que cada coluna de uma tabela deve depender da chave primária da tab
         |    `2`   |   `54`   |    `10`    |
         |    `3`   |   `54`   |    `10`    |
 
-        > [!NOTE]
         > *Segunda tabela somente com CodLivro, CodAutor e CodEditora.*
 
-    Agora, apenas o CodLivro será suficiente, na primeira coluna, para já puxar o CodAutor e o CodEditora.
+Agora, apenas o CodLivro será suficiente, na primeira coluna, para já puxar o CodAutor e o CodEditora.
 
 
 ### Terceira Forma Normal (3FN)
@@ -110,7 +102,6 @@ Estabelece que cada coluna de uma tabela deve depender apenas da chave primária
     |     `2`     | `Intrínseca` |   `2005`  |    `2`    | `Transp 2` |
     |     `3`     |   `Saraiva`  |   `2005`  |    `3`    | `Transp 3` |
 
-    > [!NOTE]
     > *Aparece código da transportadora e o nome da transportadora.*
 
   Isso é visto como informação desnecesária. Para resolver esse problema, teremos que dividir a tabela em **duas**.
@@ -124,7 +115,6 @@ Estabelece que cada coluna de uma tabela deve depender apenas da chave primária
         |     `2`     | `Intrínseca` |   `2005`  |    `2`    |
         |     `3`     |   `Saraiva`  |   `2005`  |    `3`    |
 
-        > [!NOTE]
         > *Primeira tabela sem a coluna Transp.*
 
     2. CodTransp e Transp:
@@ -135,7 +125,6 @@ Estabelece que cada coluna de uma tabela deve depender apenas da chave primária
         |    `2`    | `Transp 2` |
         |    `3`    | `Tramsp 3` |
 
-        > [!NOTE]
         > *Segunda tabela somente com CodTransp e Transp.*
 
     Agora, apenas o CodTransp será suficiente, na primeira coluna, para já puxar o CodTransp e o Transp.
